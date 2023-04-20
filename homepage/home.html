@@ -48,6 +48,22 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            progress: ["ProgressExtended-Bold", "sans-serif"],
+          },
+          extends: {
+            colors: {
+              "main-light-green": "#097b6a",
+              "main-dark-green": "#022d46",
+            },
+          },
+        },
+      };
+    </script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
@@ -58,6 +74,34 @@
     <!-- END OF NAVBAR -->
 
     <!-- HERO -->
+    <section class="min-h-screen w-full">
+      <div class="flex align-middle justify-between pt-20 w-4/5 m-auto">
+        <div class="hero-left w-1/2">
+          <h3 class="font-progress text-2xl text-white z-1">
+            tech festival 2022
+          </h3>
+          <h1 class="font-progress text-6xl text-white">
+            building adaptive, collaborative, and inovative gen z tech talent
+          </h1>
+          <p class="p-1 text-white">
+            Annual IT festival event held by HIMTI Binus University
+          </p>
+          <a
+            href="#"
+            class="glass text-white p-3 px-10 rounded-md shadow-md mt-5 inline-block"
+          >
+            Daftar Sekarang
+          </a>
+        </div>
+        <div class="hero-right flex-row justify-end">
+          <img class="" src="assets/brain.png" alt="brain image" />
+        </div>
+        <div
+          class="w-[40rem] h-[40rem] bg-gradient-to-r absolute -right-32 -top-32 inline-block rounded-[7rem] rotate-45 to-cyan-950 from-teal-700 -z-10"
+        ></div>
+      </div>
+    </section>
+
     <!-- END OF HERO -->
 
     <!-- ABOUT -->
@@ -109,6 +153,7 @@
     <!-- FOOTER -->
     <!-- END OF FOOTER -->
     <script src="home.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script> -->
   </body>
 </html>

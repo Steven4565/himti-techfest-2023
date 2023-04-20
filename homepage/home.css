@@ -5,13 +5,12 @@
 }
 
 html {
-  overflow: auto;
   scroll-behavior: smooth;
 }
 
 body {
-  position: relative;
-  overflow-x: hidden;
+  /* position: relative; */
+  /* overflow-x: hidden; */
   background-color: #022f46;
 }
 
