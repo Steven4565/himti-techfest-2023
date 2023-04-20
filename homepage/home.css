@@ -14,6 +14,15 @@ body {
   background-color: #022f46;
 }
 
+/* COMPONENTS */
+.gradient-box {
+  @apply;
+}
+
+.glass-border {
+  @apply border border-1 border-white/60;
+}
+
 /* NAVBAR */
 /* END OF NAVBAR */
 
