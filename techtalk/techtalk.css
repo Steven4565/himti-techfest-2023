@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+/* NAVBAR */
+/* END OF NAVBAR */
+
+/* HERO */
+/* END OF HERO */
+
+/* OVERVIEW */
+/* END OF OVERVIEW */
+
+/* DESCRIPTION */
+/* END OF DESCRIPTION */
+
+/* SPEAKERS */
+/* END OF SPEAKERS */
+
+/* SPONSOR */
+/* END OF SPONSOR */
+
+/* JOIN US */
+/* END OF JOIN US */
+
+/* FOOTER */
+/* END OF FOOTER */

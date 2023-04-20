@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+/* NAVBAR */
+/* END OF NAVBAR  */
+
+/* HERO */
+/* END OF HERO */
+
+/* OVERVIEW */
+/* END OF OVERVIEW */
+
+/* FOOTER */
+/* END OF FOOTER */
