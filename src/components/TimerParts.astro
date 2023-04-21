@@ -1,0 +1,14 @@
+---
+export interface Props {
+  id: string;
+  width?: string;
+}
+
+const { id, width } = Astro.props;
+---
+
+<div
+  class={`glass glass-border flex justify-center align-center border-[3px] border-white/30 rounded-md w-${width} h-${width} m-1 `}
+>
+  <h1 id={id} class="text-white text-3xl">0</h1>
+</div>

@@ -1,0 +1,13 @@
+---
+export interface Props {
+  xPos: string;
+  yPos: string;
+}
+
+const { xPos, yPos } = Astro.props;
+---
+
+<div
+  class={`${xPos} ${yPos} absolute light-green light inline-block w-96 h-96 z-30`}
+>
+</div>

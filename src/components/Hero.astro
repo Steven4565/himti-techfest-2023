@@ -1,0 +1,38 @@
+---
+import GradientBox from "./background/GradientBox.astro";
+import Ambience from "./background/Ambience.astro";
+import Timer from "./Timer.astro";
+---
+
+<section class="min-h-screen w-full x-overflow-hidden">
+  <div
+    class="flex align-middle justify-between pt-40 lg:w-9/10 xl:w-4/5 m-auto"
+  >
+    <div class="hero-left w-1/2">
+      <h3 class="font-progress text-2xl lg:text-xl text-white z-1">
+        tech festival 2022
+      </h3>
+      <h1 class="font-progress md: text-2xl lg:text-4xl xl:text-6xl text-white">
+        building adaptive, collaborative, and inovative gen z tech talent
+      </h1>
+      <p class="p-1 text-white">
+        Annual IT festival event held by HIMTI Binus University
+      </p>
+      <Timer wClass="w-4/5" />
+      <a
+        href="#"
+        class="glass glass-border text-white p-3 px-10 rounded-md shadow-md mt-5 inline-block"
+      >
+        Daftar Sekarang
+      </a>
+    </div>
+    <div class="hero-right flex-row justify-end">
+      <img class="w-full lg:w-3/5" src="assets/brain.png" alt="brain image" />
+    </div>
+  </div>
+  <div class="absolute w-full h-full top-0 left-0 overflow-x-clip -z-10">
+    <GradientBox rotationClass="rotate-45" xPos="-right-32" />
+    <Ambience xPos="right-0" yPos="top-[500px]" />
+    <Ambience xPos="left-0" yPos="top-[400px]" />
+  </div>
+</section>

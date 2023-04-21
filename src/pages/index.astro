@@ -1,0 +1,108 @@
+---
+import "./home.css";
+import "./font.css";
+import "./universalstyle.css";
+import Hero from "../components/Hero.astro";
+import HomeLocation from "../components/HomeLocation.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TECHFEST 2023</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/logoAndIcon/tabIcon/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/logoAndIcon/tabIcon/android-chrome-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/logoAndIcon/tabIcon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/logoAndIcon/tabIcon/favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script is:inline src="https://cdn.tailwindcss.com"></script>
+
+    <script is:inline>
+      // @ts-ignore
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            progress: ["ProgressExtended-Bold", "sans-serif"],
+          },
+          extends: {
+            colors: {
+              "main-light-green": "#097b6a",
+              "main-dark-green": "#022d46",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <!-- HERO -->
+    <Hero />
+
+    <!-- ABOUT -->
+
+    <!-- OVERVIEW -->
+
+    <!-- OUR LOCATION -->
+    <HomeLocation />
+
+    <!-- TIMELINE -->
+    <!-- END OF TIMELINE -->
+
+    <!-- OUR SPONSORS -->
+    <!-- END OF OUR SPONSORS -->
+
+    <!-- FAQ -->
+    <!-- END OF FAQ -->
+
+    <!-- FOOTER -->
+    <!-- END OF FOOTER -->
+    <script is:inline src="home.js"></script>
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"
+    ></script>
+  </body>
+</html>
