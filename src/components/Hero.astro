@@ -6,26 +6,28 @@ import Timer from "./Timer.astro";
 
 <section class="min-h-screen w-full x-overflow-hidden">
   <div
-    class="flex align-middle justify-between pt-10 lg:pt-32 m-auto w-9/10 md:w-4/5 flex-col-reverse lg:flex-row"
+    class="flex align-middle justify-between pt-10 lg:pt-32 m-auto w-9/10 md:w-4/5 flex-col-reverse lg:flex-row-reverse"
   >
     <div class="hero-left w-4/5 m-auto justify-center">
       <h3
-        class="font-progress text-white z-1 text-center pb-3 text-xl lg:text-left"
+        class="font-[ProgressExtended-Bold] text-white z-1 text-center pb-3 text-xl lg:text-right"
       >
-        tech festival 2022
+        HIMTI FESTIVAL 2023
       </h3>
       <h1
-        class="font-progress text-white text-center text-2xl sm:text-4xl lg:text-left xl:text-5xl"
+        class="font-[ProgressExtended-Bold] text-white text-center text-6xl lg:text-right lg:text-7xl"
       >
-        building adaptive, collaborative, and inovative gen z tech talent
+        COMPETITION
       </h1>
-      <p class="p-1 text-white text-center lg:text-left">
+      <p class="p-1 text-white text-center lg:text-right">
         Annual IT festival event held by HIMTI Binus University
       </p>
-      <Timer
-        wClass="w-full sm:w-4/5 md:w-7/10 lg:4/5 xl:w-3/5 flex justify-center lg:justify-start xl:mt-5"
-      />
-      <div class="flex">
+      <div class="flex justify-end">
+        <Timer
+          wClass="w-full sm:w-4/5 md:w-7/10 lg:4/5 xl:w-3/5 flex justify-center lg:justify-end xl:mt-5"
+        />
+      </div>
+      <div class="flex justify-end">
         <a
           href="#"
           class="glass glass-border text-white p-3 px-10 rounded-md m-auto mt-5 inline-block lg:m-0 lg:mt-5"
@@ -37,14 +39,14 @@ import Timer from "./Timer.astro";
     <div class="hero-right flex-row justify-end">
       <img
         class="w-4/5 m-auto pb-5 sm:w-3/5 md:w-2/5 lg:w-4/5"
-        src="assets/brain.png"
-        alt="brain image"
+        src="assets/hero.png"
+        alt="hero image"
       />
     </div>
   </div>
   <div class="absolute w-full h-full top-0 left-0 overflow-x-clip -z-10">
-    <GradientBox rotationClass="rotate-45" xPos="-right-32" />
-    <Ambience xPos="right-0" yPos="top-[500px]" />
-    <Ambience xPos="left-0" yPos="top-[400px]" />
+    <GradientBox rotationClass="rotate-[135deg]" xPos="-left-32" />
+    <Ambience xPos="left-0" yPos="top-[500px]" />
+    <Ambience xPos="right-0" yPos="top-[400px]" />
   </div>
 </section>
