@@ -1,6 +1,7 @@
 ---
 export interface Props {
   id: string;
+  class?: string;
   width?: string;
 }
 
@@ -8,7 +9,7 @@ const { id, width } = Astro.props;
 ---
 
 <div
-  class={`glass glass-border flex justify-center align-center border-[3px] border-white/30 rounded-md w-${width} h-${width} m-1 `}
+  class={`glass glass-border flex justify-center align-center rounded-md w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px] lg:w-12 lg:h-12 m-1`}
 >
-  <h1 id={id} class="text-white text-3xl">0</h1>
+  <h1 id={id} class="text-white text-center text-xl md:text-4xl">0</h1>
 </div>
