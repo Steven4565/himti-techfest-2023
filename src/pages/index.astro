@@ -5,6 +5,9 @@ import "./universalstyle.css";
 import Hero1 from "../components/Hero1.astro";
 import HomeLocation from "../components/HomeLocation.astro";
 import Hero2 from "../components/Hero2.astro";
+import Hero3 from "../components/Hero3.astro";
+
+const heroType = 2;
 ---
 
 <!DOCTYPE html>
@@ -63,14 +66,28 @@ import Hero2 from "../components/Hero2.astro";
     <!-- NAVBAR -->
 
     <!-- HERO -->
-    <Hero1
-      title="tech festival 2022"
-      description="building adaptive, collaborative, and inovative gen z tech talent"
-      text="Annual IT festival event held by HIMTI Binus University"
-      color="purple"
-    />
 
-    <!-- <Hero2 /> -->
+    {
+      heroType === 1 && (
+        <Hero1
+          title="tech festival 2022"
+          description="building adaptive, collaborative, and inovative gen z tech talent"
+          text="Annual IT festival event held by HIMTI Binus University"
+          color="purple"
+        />
+      )
+    }
+    {heroType === 2 && <Hero2 />}
+    {
+      heroType === 3 && (
+        <Hero3
+          title="tech festival 2022"
+          description="building adaptive, collaborative, and inovative gen z tech talent"
+          text="Annual IT festival event held by HIMTI Binus University"
+          color="purple"
+        />
+      )
+    }
 
     <!-- ABOUT -->
 
