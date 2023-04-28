@@ -1,0 +1,9 @@
+---
+export interface Props {
+  yPos:string;
+  xPos: string;
+}
+
+const { yPos, xPos } = Astro.props;
+---
+<img src="assets/honeycomb-1.svg" alt="honeycomb background" class={`w-[40rem] h-[40rem] absolute ${xPos} ${yPos} rotate-90` }>
