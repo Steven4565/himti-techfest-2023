@@ -2,13 +2,13 @@
 export interface Props {
   xPos: string;
   yPos: string;
-  color: "light-purple" | "light-green";
+  color: "purple" | "green";
 }
 
 const { xPos, yPos, color } = Astro.props;
 ---
 
 <div
-  class={`${xPos} ${yPos} absolute ${color} light inline-block w-96 h-96 z-30`}
+  class={`${xPos} ${yPos} absolute light-${color} light inline-block w-96 h-96 z-30`}
 >
 </div>
