@@ -3,6 +3,15 @@ import GradientBox from "./background/GradientBox.astro";
 import Ambience from "./background/Ambience.astro";
 import Timer from "./Timer.astro";
 import Wave from "./background/Wave.astro";
+
+export interface Props {
+  title: string;
+  description: string;
+  text: string;
+  color: "green" | "purple";
+}
+
+const { title, description, text, color } = Astro.props;
 ---
 
 <section class="min-h-screen w-full x-overflow-hidden">
@@ -11,17 +20,17 @@ import Wave from "./background/Wave.astro";
   >
     <div class="hero-left w-4/5 m-auto justify-center">
       <h3
-        class="font-progress text-white z-1 text-center pb-3 text-xl lg:text-left"
+        class="font-[ProgressExtended-Bold] text-white z-1 text-center pb-3 text-xl lg:text-left"
       >
-        tech festival 2022
+        {title}
       </h3>
       <h1
-        class="font-progress text-white text-center text-2xl sm:text-4xl lg:text-left xl:text-5xl"
+        class="font-[ProgressExtended-Bold] text-white text-center text-2xl sm:text-4xl lg:text-left xl:text-5xl"
       >
-        building adaptive, collaborative, and inovative gen z tech talent
+        {description}
       </h1>
       <p class="p-1 text-white text-center lg:text-left">
-        Annual IT festival event held by HIMTI Binus University
+        {text}
       </p>
       <Timer
         wClass="w-full  md:w-7/10 lg:4/5 xl:w-4/5 lg:justify-start xl:mt-5"
@@ -38,15 +47,15 @@ import Wave from "./background/Wave.astro";
     <div class="hero-right flex-row justify-end">
       <img
         class="w-4/5 m-auto pb-5 sm:w-3/5 md:w-2/5 lg:w-4/5"
-        src="assets/brain.png"
-        alt="brain image"
+        src="assets/hero.png"
+        alt="hero image"
       />
     </div>
   </div>
   <div class="absolute w-full h-full top-0 left-0 overflow-x-clip -z-10">
-    <GradientBox rotationClass="rotate-45" xPos="-right-32" />
-    <Ambience xPos="right-0" yPos="top-[500px]" />
-    <Ambience xPos="left-0" yPos="top-[400px]" />
+    <GradientBox rotationClass="rotate-45" xPos="-right-32" color={color} />
+    <Ambience xPos="right-0" yPos="top-[500px]" color={color} />
+    <Ambience xPos="left-0" yPos="top-[400px]" color={color} />
     <Wave xPos="left-0" yPos="top-0" />
   </div>
 </section>

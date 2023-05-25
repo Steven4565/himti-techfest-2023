@@ -2,12 +2,16 @@
 export interface Props {
   rotationClass: string;
   xPos: string;
+  color: "purple" | "green";
 }
 
-const { rotationClass, xPos } = Astro.props;
+const { rotationClass, xPos, color } = Astro.props;
+
+const gradient1 = color === "purple" ? "#022d46" : "#022d46";
+const gradient2 = color === "purple" ? "#934b8f" : "#097b68";
 ---
 
 <div
-  class={`w-[40rem] h-[40rem] bg-gradient-to-r absolute ${xPos} -top-32 inline-block rounded-[7rem] ${rotationClass} to-cyan-950 from-teal-700 -z-10`}
+  class={`w-[40rem] h-[40rem] bg-gradient-to-r absolute ${xPos} -top-32 inline-block rounded-[7rem] ${rotationClass} to-[${gradient1}] from-[${gradient2}] -z-10`}
 >
 </div>

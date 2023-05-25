@@ -1,0 +1,26 @@
+---
+export interface Props {
+  yPos: string;
+  xPos: string;
+}
+
+const { yPos, xPos } = Astro.props;
+---
+
+<div class={`absolute ${xPos} ${yPos} -z-11 hidden lg:block`}>
+  <h1
+    class="text-white font-[ProgressExtended-Bold] text-[100px] whitespace-nowrap"
+  >
+    COMPETITION
+  </h1>
+  <h1
+    class="text-[#8094a3] font-[ProgressExtended-Bold] text-[100px] whitespace-nowrap"
+  >
+    &ensp;&ensp; BIG DATA
+  </h1>
+  <h1
+    class="text-[#8094a3] font-[ProgressExtended-Bold] text-[100px] whitespace-nowrap"
+  >
+    &ensp;&ensp;&ensp;&ensp;UI/UX DESIGN
+  </h1>
+</div>
