@@ -9,7 +9,12 @@ const { id, width } = Astro.props;
 ---
 
 <div
-  class={`glass glass-border flex justify-center align-center rounded-md w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px] lg:w-12 lg:h-12 m-1`}
+  class={`glass glass-border flex justify-center items-center rounded-md w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px] lg:w-14 lg:h-14 m-1`}
 >
-  <h1 id={id} class="text-white text-center text-xl md:text-4xl">0</h1>
+  <h1
+    id={id}
+    class="font-[ProgressExtended-Bold] text-white text-center text-md md:text-4xl"
+  >
+    0
+  </h1>
 </div>

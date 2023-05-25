@@ -11,19 +11,38 @@ const partWidth = "9";
 const partsContainerClass = "flex w-3/10 ";
 ---
 
-<div class={`${wClass} flex jusifty-center m-auto my-5 lg:m-0`}>
-  <div class={partsContainerClass}>
-    <TimerParts id="day1" width={partWidth} />
-    <TimerParts id="day2" width={partWidth} />
+<div
+  class={`${wClass} flex justify-center lg:justify-start m-auto my-5 lg:m-0 timer-container`}
+>
+  <div class="flex flex-col justify-center items-center">
+    <div class={partsContainerClass}>
+      <TimerParts id="day1" width={partWidth} />
+      <TimerParts id="day2" width={partWidth} />
+    </div>
+    <p class="text-white font-[ProgressExtended-Bold]">DAYS</p>
   </div>
   <div class="inline-block w-[2vw] h-1"></div>
-  <div class={`${partsContainerClass}`}>
-    <TimerParts id="hour1" width={partWidth} />
-    <TimerParts id="hour2" width={partWidth} />
+  <div class="flex flex-col justify-center items-center">
+    <div class={`${partsContainerClass}`}>
+      <TimerParts id="hour1" width={partWidth} />
+      <TimerParts id="hour2" width={partWidth} />
+    </div>
+    <p class="text-white font-[ProgressExtended-Bold]">HOUR</p>
   </div>
   <div class="inline-block w-[2vw] h-1"></div>
-  <div class={partsContainerClass}>
-    <TimerParts id="min1" width={partWidth} />
-    <TimerParts id="min2" width={partWidth} />
+  <div class="flex flex-col justify-center items-center">
+    <div class={partsContainerClass}>
+      <TimerParts id="min1" width={partWidth} />
+      <TimerParts id="min2" width={partWidth} />
+    </div>
+    <p class="text-white font-[ProgressExtended-Bold]">MINS</p>
+  </div>
+  <div class="inline-block w-[2vw] h-1"></div>
+  <div class="flex flex-col justify-center items-center">
+    <div class={partsContainerClass}>
+      <TimerParts id="sec1" width={partWidth} />
+      <TimerParts id="sec2" width={partWidth} />
+    </div>
+    <p class="text-white font-[ProgressExtended-Bold]">SEC</p>
   </div>
 </div>
